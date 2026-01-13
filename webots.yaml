@@ -1,5 +1,7 @@
-
 version: 1
+
+type: simulation
+
 controller:
   name: my_controller
   language: python
