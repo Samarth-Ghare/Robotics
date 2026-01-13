@@ -1,2 +1,35 @@
-
 #VRML_SIM R2022b utf8
+
+WorldInfo {
+  basicTimeStep 32
+}
+
+Viewpoint {
+  orientation 0.577 0.577 0.577 2.1
+  position 0 6 10
+}
+
+TexturedBackground { }
+TexturedBackgroundLight { }
+
+Floor {
+  size 20 20
+}
+
+Robot {
+  translation 0 0.1 0
+  rotation 0 1 0 0
+  controller "my_controller"
+  children [
+    Shape {
+      geometry Box {
+        size 0.5 0.2 0.3
+      }
+      appearance Appearance {
+        material Material {
+          diffuseColor 0 0.6 1
+        }
+      }
+    }
+  ]
+}
