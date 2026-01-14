@@ -1,3 +1,5 @@
+controller "my_controller"
+
 #VRML_SIM R2022b utf8
 
 WorldInfo {
